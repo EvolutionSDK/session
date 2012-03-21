@@ -241,7 +241,7 @@ class Bundle {
 		 * Bind session data to LHTML hook
 		 * @author Nate Ferrero
 		 */
-		e::configure('lhtml')->activeAddKey('hook', ':session', array('--reference' => $this->_data));
+		e::configure('lhtml')->activeAddKey('hook', ':session', array('--reference' => &$this->_data));
 	}
 	
 	/**
