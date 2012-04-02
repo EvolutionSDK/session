@@ -257,7 +257,9 @@ class Bundle {
 			if(strlen($this->_cookie) == 32) return $this->_get();
 			else return $this->_create();
 		} catch(Exception $e) {
-			e\trace_exception($e);
+			$url = $_SERVER['REQUEST_URI'];
+			if($url[1] !== '@')
+				throw $e;
 		}
 	}
 	
