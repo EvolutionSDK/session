@@ -143,7 +143,8 @@ class Bundle {
 		"YandexBot",
 		"yacybot",
 		"Yahoo-MMCrawler",
-		"yetibot"
+		"yetibot",
+		"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.151 Safari/535.19"
 	);
 	
 	public function __construct($dir) {
@@ -554,6 +555,10 @@ class Bundle {
 			$this->_hit->exec_time_ms = abs($time);
 			$this->_hit->save();	
 		}
+	}
+
+	public function robot() {
+		return $this->_robot;
 	}
 
 	/**
