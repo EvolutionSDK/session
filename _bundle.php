@@ -42,6 +42,10 @@ class Bundle {
 		return false;
 	}
 	
+	/**
+	 * Robots List
+	 * @author Kelly Becker
+	 */
 	private static $_robots = array(
 		"Facebook",
 		"Accoona-AI-Agent",
