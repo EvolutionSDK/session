@@ -8,7 +8,7 @@ list:
     extra_info: longblob
     data: longblob
     +ip: string
-    last_hit: int
+    last_hit: number
 hits:
   singular: hit
   plural: hits
@@ -17,7 +17,7 @@ hits:
     +referer: string
     exec_time_ms: float
     +parent: 
-      Type: int
+      Type: int(9)
       Default: null
       Null: 'YES'
   hasOne: 
