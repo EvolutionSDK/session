@@ -147,7 +147,8 @@ class Bundle {
 		"YandexBot",
 		"yacybot",
 		"Yahoo-MMCrawler",
-		"yetibot"
+		"yetibot",
+		"NewRelicPinger"
 	);
 	
 	public function __construct($dir) {
