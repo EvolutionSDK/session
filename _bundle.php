@@ -148,6 +148,7 @@ class Bundle {
 		"yacybot",
 		"Yahoo-MMCrawler",
 		"yetibot",
+		"momentum-plugin",
 		"NewRelicPinger"
 	);
 	
