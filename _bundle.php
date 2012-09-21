@@ -207,7 +207,8 @@ class Bundle {
 		/**
 		 * Grab the cookie url
 		 */
-		$cookie_url = e::$environment->requireVar('Session.Cookie.URL');
+		$cookie_url = e::$events->first->cookie_url();
+		$cookie_url = $cookie_url ? $cookie_url : e::$environment->requireVar('Session.Cookie.URL');
 		$this->_cookie_url = $cookie_url ? $cookie_url : false;
 		
 		/**
